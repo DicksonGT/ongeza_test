@@ -44,8 +44,11 @@ include("../core_system/database_conn.php");
 				<td>".$row1['first_name']."</td>
 				<td>".$row1['last_name']."</td>
 				<td>".$row1['town_name']."</td>
-				<td>".$row1['gender']."</td>
-				<td> <a href='form_edit_customer.php?id=".$row1['id']."'>Edit</a> | <a href='form_delete_customer.php?id=".$row1['id']."'>Delete</a></td>
+				<td>".($row1['gender_id'] == 1 ? 'Male' : 'Female')."</td>
+				<td> 
+					<a href='form_edit_customer.php?id=".$row1['id']."'>Edit</a> | 
+					<a href='form_delete_customer.php?id=".$row1['id']."'>Delete</a>
+				</td>
 				</tr>";
 			  }
 	?>
