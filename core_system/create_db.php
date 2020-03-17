@@ -15,7 +15,7 @@ try {
 		    $_SESSION["msg"] = "Database created successfully";
 
 		    header("Location: form_migrate_customer.php"); 
-		    //exit();
+		    
 		} else{
 		    echo "ERROR: Could not execute query: ". $sql. mysqli_error($link);
 		}

@@ -38,4 +38,5 @@
 
 	$conn->close();
 
+	header("Location: views/customers.php"); 
 ?>
