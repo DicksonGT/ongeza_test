@@ -7,11 +7,12 @@
 </head>
 <body>
 <?php 
-	echo "ID: ".$_GET['id'];
-	include("database_conn.php");
+	
+	include("../core_system/database_conn.php");
 
-	$id=$_REQUEST['id'];
-	mysqli_query($con,"DELETE FROM `customers` WHERE id ='".$id."'");
+	$id=$_GET['id'];
+	
+	mysqli_query($con,"DELETE FROM customers WHERE id = $id;");
 
 ?>
 <div class="info">

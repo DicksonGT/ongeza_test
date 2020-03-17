@@ -8,6 +8,7 @@
 	if (isset($_SESSION['msg2'])) {
 		echo "<br>". $_SESSION['msg2'];
 	}
+	session_destroy();
 ?>
 <head>
  <title> Ongeza Customers</title>
@@ -22,7 +23,7 @@ include("../core_system/database_conn.php");
 <table width="100%" cellpadding="10" border="1">
 <tr><td colspan="6"><h1 style="text-align:center;" >List Of Customers</h1>
 		<p style="text-align: right; padding-right: 12px">
-			<a href="">	<strong>Add New Customer</strong></a>
+			<a href="form_create_customer.php">	<strong>Add New Customer</strong></a>
 		</p>
 	</td>
 </tr>
