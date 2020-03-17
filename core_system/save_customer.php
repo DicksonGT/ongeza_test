@@ -27,9 +27,9 @@
 <div class="info">
 <?php
 	if (isset($_REQUEST['id'])) {
-		echo "<h1> Customer Updated! </h1><br />";
+		echo "<h1> Customer " . $first_name ." Updated! </h1><br />";
 	}else{
-		echo "<h1> Customer Saved! </h1><br />";
+		echo "<h1> Customer " . $first_name ." Saved! </h1><br />";
 	}
 ?>
 <a href="../views/customers.php">Back to Customers</a>
