@@ -1,7 +1,8 @@
 <?php
 	session_start();
     
-    $conn = mysqli_connect("localhost","root","123","qqww");
+    $conn = mysqli_connect("localhost", $_SESSION['db_uname'],  $_SESSION['db_pwd'], $_SESSION['db_name']);
+    
 	try {	
 		$sql_customer = "CREATE TABLE customers (
 		id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -38,5 +39,5 @@
 
 	$conn->close();
 
-	header("Location: views/customers.php"); 
+	header("Location: ../views/form_create_gender.php"); 
 ?>

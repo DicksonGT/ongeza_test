@@ -1,15 +1,5 @@
 <!DOCTYPE html>
 <html>
-<?php
-	session_start();
-	if (isset($_SESSION['msg1'])) {
-		echo $_SESSION['msg1'];
-	}
-	if (isset($_SESSION['msg2'])) {
-		echo "<br>". $_SESSION['msg2'];
-	}
-	session_destroy();
-?>
 <head>
  <title> Ongeza Customers</title>
  <link href="../css/main.css" rel="stylesheet" type="text/css" />
@@ -20,6 +10,7 @@
 include("../core_system/database_conn.php");
 ?>
 <div class="info" style="max-width:80%;">
+	
 <table width="100%" cellpadding="10" border="1">
 <tr><td colspan="6"><h1 style="text-align:center;" >List Of Customers</h1>
 		<p style="text-align: right; padding-right: 12px">
@@ -57,7 +48,7 @@ include("../core_system/database_conn.php");
 </div>
 
 <?php
-mysqli_close($con);
+	mysqli_close($con);
 ?>
 
 </body>

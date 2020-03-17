@@ -16,7 +16,8 @@
 ?>
 <div class="info">
 <h1> Gender <?php echo $gender_name ?> Saved! </h1><br />
-<a href="../views/customers.php">Back to Customers</a>
+<a href="../views/form_create_gender.php">Add Gender</a> or <a href="../views/customers.php">Go to Customers</a>
+
 </div>
 
 <?php
